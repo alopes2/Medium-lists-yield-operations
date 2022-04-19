@@ -39,13 +39,10 @@ var exceptionYieldList = YieldListIteration.GetDoubleNumbersWithExceptionHappeni
 
 PrintNumbers(exceptionYieldList);
 
-
 Console.WriteLine("Yield Async List");
 var asyncYieldList = YieldListIteration.GetDoubledNumbersAsync(numbers);
 
 await PrintNumbersAsync(asyncYieldList);
-
-
 
 void PrintNumbers(IEnumerable<int> list)
 {
@@ -55,11 +52,6 @@ void PrintNumbers(IEnumerable<int> list)
     {
         Console.Write(i + ", ");
     }
-
-    Console.WriteLine();
-    Console.WriteLine();
-    Console.WriteLine("------------------");
-    Console.WriteLine();
 }
 
 async Task PrintNumbersAsync(IAsyncEnumerable<int> list)
@@ -70,9 +62,4 @@ async Task PrintNumbersAsync(IAsyncEnumerable<int> list)
     {
         Console.Write(i + ", ");
     }
-
-    Console.WriteLine();
-    Console.WriteLine();
-    Console.WriteLine("------------------");
-    Console.WriteLine();
 }

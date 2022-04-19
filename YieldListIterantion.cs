@@ -57,7 +57,7 @@ public static class YieldListIteration
     {
         foreach (var i in list)
         {
-            await Task.Delay(2000);
+            await Task.Delay(1000);
             yield return i * 2;
         }
     }
